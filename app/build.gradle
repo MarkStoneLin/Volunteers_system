@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.3'
+
+    defaultConfig {
+        applicationId "cn.bmob.bs.zhiyuanzhe"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //删除META-INF信息
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/maven/com.squareup.okhttp3/okhttp/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okhttp3/okhttp/pom.properties'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+        exclude 'META-INF/maven/com.google.code.gson/gson/pom.xml'
+        exclude 'META-INF/maven/com.google.code.gson/gson/pom.properties'
+    }
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '24.1.0'
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.1.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    //bmob-sdk
+    compile 'cn.bmob.android:bmob-sdk:3.6.0'
+    compile 'cn.bmob.android:bmob-push:1.0.1'
+    //    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    //    compile 'cn.jzvd:jiaozivideoplayer:6.2.9'
+    compile project(':library')
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'me.iwf.photopicker:PhotoPicker:0.9.5@aar'
+}

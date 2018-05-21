@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:padding="10dp"
+    >
+    <Button
+        android:id="@+id/zhishu"
+        style="@style/Button"
+        android:text="知书"
+        />
+    <Button
+        android:id="@+id/quxue"
+        style="@style/Button"
+        android:text="趣学"
+        />
+    <Button
+        android:id="@+id/gufeng"
+        style="@style/Button"
+        android:text="古风"
+        />
+    <Button
+        android:id="@+id/wode"
+        style="@style/Button"
+        android:text="我的"
+        />
+    <Button
+        android:id="@+id/logout"
+        style="@style/Button"
+        android:text="登出"
+        />
+
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/touxiang"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="80dp"
+            android:onClick="onClick"
+            android:background="@drawable/icon_callserver_unpressed"
+            android:layout_height="80dp" />
+
+
+        <!--<Button-->
+            <!--android:id="@+id/select"-->
+            <!--android:layout_width="85dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/add_cart_bg_selector"-->
+            <!--android:onClick="onClick"-->
+            <!--android:text="选择头像"-->
+            <!--android:textColor="@android:color/white" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="请输入账号"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="姓名"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入姓名"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="年龄"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nianlin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:hint="请输入年龄"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="密码"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:hint="请输入密码"
+                android:textSize="15sp" />
+            <ImageButton
+                android:id="@+id/ib_login_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_password_drawable_invisible" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="确认密码"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/passwordConfirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_password_drawable_invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="性别"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+
+            <RadioGroup
+                android:id="@+id/xingbie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/nv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="女" />
+
+                <RadioButton
+                    android:id="@+id/nan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="男" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/add_cart_bg_selector"
+            android:onClick="onClick"
+            android:text="提交" />
+
+    </LinearLayout>
+</LinearLayout>

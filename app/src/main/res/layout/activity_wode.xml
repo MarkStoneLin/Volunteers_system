@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebef"
+    android:orientation="vertical"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/touxiangBG"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <cn.bmob.bs.zhiyuanzhe.common.CircleImageView
+            android:id="@+id/touxiang"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/touxiangBG"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/relativeLayout">
+
+            <ImageView
+                android:id="@+id/user_line"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/community_user_name_bg"
+                android:gravity="center_horizontal"
+                android:textColor="#ff5e9cff"
+                android:text="张三"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/changeInfo"
+            style="@style/TextStyle"
+            android:drawableLeft="@drawable/user_icon_ticket"
+            android:text="修改注册信息                                                               " />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/changePwd"
+            style="@style/TextStyle"
+            android:drawableLeft="@drawable/user_icon_ticket"
+            android:text="修改密码                                                                      " />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/logout"
+            style="@style/TextStyle"
+            android:drawableLeft="@drawable/user_icon_ticket"
+            android:text="退出登录                                                                       " />
+
+    </RelativeLayout>
+
+
+    <!--<cn.bmob.bs.zhiyuanzhe.common.CircleImageView-->
+        <!--android:id="@+id/touxiangBJ"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--/>-->
+
+    <!--<cn.bmob.bs.zhiyuanzhe.common.CircleImageView-->
+        <!--android:id="@+id/touxiang"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/name"-->
+        <!--style="@style/Label"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--/>-->
+    <!--<Button-->
+        <!--android:id="@+id/changeInfo"-->
+        <!--style="@style/Button"-->
+        <!--android:text="修改注册信息"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/changePwd"-->
+        <!--style="@style/Button"-->
+        <!--android:text="修改密码"-->
+        <!--/>-->
+    <!--<Button-->
+        <!--android:id="@+id/logout"-->
+        <!--style="@style/Button"-->
+        <!--android:text="登出"-->
+        <!--/>-->
+
+</LinearLayout>

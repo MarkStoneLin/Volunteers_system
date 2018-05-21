@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:padding="10dp"
+    >
+
+    <TextView
+        style="@style/Label"
+        android:text="活动名"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/Value"
+        />
+
+    <TextView
+        style="@style/Label"
+        android:text="活动内容"
+        />
+
+    <TextView
+        android:id="@+id/neirong"
+        style="@style/Value"
+        />
+
+    <TextView
+        style="@style/Label"
+        android:text="活动地点"
+        />
+
+    <TextView
+        android:id="@+id/didian"
+        style="@style/Value"
+        />
+
+    <TextView
+        style="@style/Label"
+        android:text="活动时间"
+        />
+
+    <TextView
+        android:id="@+id/shijian"
+        style="@style/Value"
+        />
+
+    <Button
+        android:id="@+id/canjia"
+        style="@style/Button"
+        android:text="参加活动"
+        />
+</LinearLayout>

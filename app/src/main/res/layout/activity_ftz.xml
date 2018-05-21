@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+    >
+    <TextView
+        style="@style/Label"
+        android:text="标题"
+        />
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入标题"
+        />
+    <TextView
+        style="@style/Label"
+        android:text="通知内容"
+        />
+    <EditText
+        android:id="@+id/neirong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入通知内容"
+        />
+
+    <TextView
+        style="@style/Label"
+        android:text="活动"
+        />
+    <TextView
+        android:id="@+id/huodong"
+        style="@style/Value"
+        android:text="点击选择活动"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Button"
+        android:text="发布"
+        />
+</LinearLayout>

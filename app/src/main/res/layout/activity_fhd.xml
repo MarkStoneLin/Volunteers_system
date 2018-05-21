@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+    >
+    <TextView
+        style="@style/Label"
+        android:text="标题"
+        />
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入标题"
+        />
+    <TextView
+        style="@style/Label"
+        android:text="活动内容"
+        />
+    <EditText
+        android:id="@+id/neirong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入活动内容"
+        />
+
+    <TextView
+        style="@style/Label"
+        android:text="活动地点"
+        />
+    <EditText
+        android:id="@+id/didian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入活动地点"
+        />
+
+    <TextView
+        style="@style/Label"
+        android:text="活动时间"
+        />
+    <TextView
+        android:id="@+id/shijian"
+        style="@style/Value"
+        android:text="点击选择活动时间"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Button"
+        android:text="发布"
+        />
+</LinearLayout>

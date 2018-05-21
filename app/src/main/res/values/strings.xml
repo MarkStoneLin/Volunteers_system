@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">志愿者平台</string>
+    <string name="tab1">活动通知</string>
+    <string name="tab2">活动墙</string>
+    <string name="tab3">动态</string>
+    <string name="tab4">个人信息</string>
+</resources>

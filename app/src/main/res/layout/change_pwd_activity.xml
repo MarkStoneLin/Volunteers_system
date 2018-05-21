@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/picture1" />
+
+        <!--<Button-->
+        <!--android:id="@+id/select"-->
+        <!--android:layout_width="85dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@drawable/add_cart_bg_selector"-->
+        <!--android:onClick="onClick"-->
+        <!--android:text="选择头像"-->
+        <!--android:textColor="@android:color/white" />-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeee" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="原密码"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/old"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+
+            <ImageButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_password_drawable_invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="新密码"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/new1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/ib_login_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_password_drawable_invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="确认新密码"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/new2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请再次输入新密码"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_password_drawable_invisible" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/change"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/add_cart_bg_selector"
+            android:onClick="onClick"
+            android:text="修改" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
