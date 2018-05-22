@@ -26,6 +26,8 @@ public class Adapter extends FragmentPagerAdapter{
         int c = a + b;
         return list.get(position);
     }
+    //sadfasdf
+    //asdfasdfas
 
 
     @Override
