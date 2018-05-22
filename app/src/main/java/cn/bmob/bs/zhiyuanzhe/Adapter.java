@@ -27,7 +27,7 @@ public class Adapter extends FragmentPagerAdapter{
         return list.get(position);
     }
 
-
+//实现订单功能
     @Override
     public int getCount() {
         return list.size();
