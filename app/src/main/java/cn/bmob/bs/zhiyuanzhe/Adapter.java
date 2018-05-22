@@ -20,6 +20,8 @@ public class Adapter extends FragmentPagerAdapter{
 
     @Override
     public Fragment getItem(int position) {
+        int i = 0;
+        i++;
         return list.get(position);
     }
 
